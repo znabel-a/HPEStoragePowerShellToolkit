@@ -41,7 +41,7 @@ param(  [Parameter(Mandatory)]                                  [string]    $FQD
         [Parameter(ParameterSetName='IgnoreServerCertificate')] [switch]    $IgnoreServerCertificate
     )
 Begin
-{   clear-variable MyMSASecurityHeader -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
+{   clear-variable MSASecurityHeader -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
 }
 Process
 {   if ($PSBoundParameters.IgnoreServerCertificate) 
